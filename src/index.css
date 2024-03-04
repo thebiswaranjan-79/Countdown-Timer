@@ -1,0 +1,129 @@
+/* Countdown.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b6d4ee; /* light blue color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #87bfce;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#input {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#datetime {
+  width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+#datetime:focus {
+  outline: none;
+  /* border-color: #007bff; */
+  border: solid 3px #007bff;
+}
+
+
+#submit {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+#submit:hover {
+  background-color: #0056b3;
+}
+
+
+#submit:hover {
+  background-color: #0056b3;
+}
+
+#display {
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+li {
+  margin-right: 20px;
+}
+
+span {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+}
+
+li span {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  background-color: #1a2027;
+  color: rgb(229, 253, 11);
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+li span::after {
+  content: ' ';
+}
+
+li span:last-child::after {
+  content: '';
+}
+
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
